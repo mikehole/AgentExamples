@@ -49,6 +49,7 @@
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
             <StackPanel>
                 <Button Content="Simple" x:Name="CmdSimple" Tap="CmdSimple_OnTap" />
+                <Button Content="Object" x:Name="CmdObject" Tap="CmdObject_Tap" />
             </StackPanel>
         </Grid>
 

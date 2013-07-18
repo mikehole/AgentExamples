@@ -25,5 +25,10 @@ namespace AgentExamples.WindowsPhoneDemoApp
         {
             NavigationService.Navigate(new Uri("/Examples/SimpleComms.xaml", UriKind.Relative));
         }
+
+        private void CmdObject_Tap(object sender, GestureEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Examples/Objects.xaml", UriKind.Relative));
+        }
     }
 }

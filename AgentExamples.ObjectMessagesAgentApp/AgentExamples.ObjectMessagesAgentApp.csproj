@@ -32,7 +32,6 @@
   </PropertyGroup>
   <Import Project="$(NetMfTargetsBaseDir)$(TargetFrameworkVersion)\CSharp.Targets" />
   <ItemGroup>
-    <Compile Include="Comms\ObejectSerialization.cs" />
     <Compile Include="Model\ToastMessage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
@@ -60,5 +59,10 @@
     <None Include="Resources\NinaB.tinyfnt" />
     <None Include="Resources\small.tinyfnt" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\MicroSerialization.Mf\MicroSerialization.Mf.csproj">
+      <Project>{DCC197B6-FB7B-4DFA-A218-2AE44128B2A3}</Project>
+      <Name>MicroSerialization.Mf</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

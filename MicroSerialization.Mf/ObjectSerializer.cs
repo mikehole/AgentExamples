@@ -3,7 +3,7 @@ using System.Reflection;
 
 namespace MicroSerialization.Mf
 {
-    class ObjectSerializer
+    public class ObjectSerializer
     {
         private byte[] newline = new byte[] { 13, 10 };
 
