@@ -41,25 +41,23 @@ namespace AgentExamples.ObjectMessagesAgentApp
 
         static void _serial_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
-            if (_serial.BytesToRead == 0) return;
+            //if (_serial.BytesToRead == 0) return;
             
-            byte[] buffer = new byte[_serial.BytesToRead];
-            _serial.Read(buffer, 0, buffer.Length);
+            //byte[] buffer = new byte[_serial.BytesToRead];
+            //_serial.Read(buffer, 0, buffer.Length);
 
-            MicroSerialization.Mf.ObjectSerializer os = new MicroSerialization.Mf.ObjectSerializer();
+            //MicroSerialization.Mf.ObjectSerializer os = new MicroSerialization.Mf.ObjectSerializer();
 
-            object objectRecieved = os.LoadFromBytes(buffer);
+            //object objectRecieved = os.LoadFromBytes(buffer);
 
-            switch (objectRecieved.GetType().Name)
-            {
-                case "ToastMessage":
-                    _display.Clear();
-                    _display.DrawText(((Model.ToastMessage)objectRecieved).Message, _fontNinaB, Color.White, 10, 64);
-                    _display.Flush();
-                    break;
-            }
-
-
+            //switch (objectRecieved.GetType().Name)
+            //{
+            //    case "ToastMessage":
+            //        _display.Clear();
+            //        _display.DrawText(((Model.ToastMessage)objectRecieved).Message, _fontNinaB, Color.White, 10, 64);
+            //        _display.Flush();
+            //        break;
+            //}
         }
     }
 }

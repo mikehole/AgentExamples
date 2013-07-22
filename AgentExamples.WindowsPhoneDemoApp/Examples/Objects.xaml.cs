@@ -71,9 +71,8 @@ namespace AgentExamples.WindowsPhoneDemoApp.Examples
             //send the text to the agent app with a trailing byte of zero st that the app knows it 
             //has all of the current data.
 
-            var objectSender = new MicroSerialization.Pcl.ObjectSerializer<ToastMessage>( WindowsRuntimeStreamExtensions.AsStreamForWrite( _socket.OutputStream ));
-
-            objectSender.SaveToStream(new ToastMessage() { Id = 1, Message = "Hello Mike" });
+            //var objectSender = new MicroSerialization.Pcl.ObjectSerializer<ToastMessage>( WindowsRuntimeStreamExtensions.AsStreamForWrite( _socket.OutputStream ));
+            //objectSender.SaveToStream(new ToastMessage() { Id = 1, Message = "Hello Mike" });
 
         }
 

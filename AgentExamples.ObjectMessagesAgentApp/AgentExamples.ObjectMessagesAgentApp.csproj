@@ -59,10 +59,4 @@
     <None Include="Resources\NinaB.tinyfnt" />
     <None Include="Resources\small.tinyfnt" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\MicroSerialization.Mf\MicroSerialization.Mf.csproj">
-      <Project>{DCC197B6-FB7B-4DFA-A218-2AE44128B2A3}</Project>
-      <Name>MicroSerialization.Mf</Name>
-    </ProjectReference>
-  </ItemGroup>
 </Project>

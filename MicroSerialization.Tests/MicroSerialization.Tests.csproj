@@ -61,12 +61,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ObjectSerializerTests.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\MicroSerialization.Pcl\MicroSerialization.Pcl.csproj">
-      <Project>{22c81444-bd4e-4d82-b81e-08908627d240}</Project>
-      <Name>MicroSerialization.Pcl</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
